@@ -30,7 +30,7 @@ body {
 .navbar .nav-links {
     display: flex;
     gap: 50px;
-    margin-right: 200px;
+    margin-right: 100px;
 }
 
 .navbar .nav-links a {
@@ -43,10 +43,7 @@ body {
     text-decoration: underline;
 }
 
-main {
-    margin-top: 70px;
-    width: 80%;
-}
+
 
 .grid-container {
     display: grid;
@@ -65,4 +62,33 @@ main {
     width: 400px;
     height: 400px;
     border-radius: 5px;
+}
+
+/* Algemeen stijlen voor de container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 kolommen */
+    grid-template-rows: repeat(2, 1fr);  /* 2 rijen */
+    gap: 20px;  /* Verlaag de ruimte tussen de vakjes */
+    margin-bottom: 20px;  /* Ruimte tussen de vakjes en het plaatje */
+}
+
+/* Vakjes */
+.box {
+    background-color: #f0f0f0;  /* Achtergrondkleur voor de vakjes */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;  /* Optionele afgeronde hoeken voor de vakjes */
+    text-align: center;  /* Centreer de tekst in het vakje */
+}
+
+/* Grote afbeelding onder de vakjes */
+.image-container {
+    width: 80%;  /* Zet de breedte van de afbeelding wat kleiner */
+    margin: 0 auto;  /* Centreer de afbeelding */
+}
+
+.large-image {
+    width: 100%;  /* Zorg ervoor dat de afbeelding de breedte van de container vult */
+    height: auto;  /* Houd de aspect ratio van de afbeelding */
 }
