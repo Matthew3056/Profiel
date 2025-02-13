@@ -12,7 +12,7 @@ body {
     width: 100%;
     background-color: #007777;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;  
     align-items: center;
     padding: 15px 20px;
     position: fixed;
@@ -30,7 +30,7 @@ body {
 .navbar .nav-links {
     display: flex;
     gap: 50px;
-    margin-right: 100px;
+    margin-left: 20px;  
 }
 
 .navbar .nav-links a {
